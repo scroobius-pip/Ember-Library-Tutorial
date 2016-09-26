@@ -11,8 +11,10 @@
   {{#each model as |contact|}}
     <tr>
       <th>{{contact.email}}</th>
-      <td>{{contact.message}}</td>
+      <td>{{contact.message}} </td>
+      
     </tr>
+    <button class="btn btn-danger btn-xs" {{action 'deleteContacts' contact}}>Delete</button>
   {{/each}}
   </tbody>
 </table>
